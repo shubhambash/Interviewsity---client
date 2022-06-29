@@ -1,0 +1,22 @@
+.navbar{
+    background-color: transparent;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+
+.nav-link{
+    color : white;
+}
+
+
+
+.navbarWrapper{
+    width : 100%;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.navbarContainer
+{
+    margin-right : 200px;
+}

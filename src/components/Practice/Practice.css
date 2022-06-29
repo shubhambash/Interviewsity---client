@@ -1,0 +1,107 @@
+#practiceOutermostWrapper
+{
+  
+    background-color: rgb(26,26,26);
+    
+
+}
+
+#praticeOuterWrapper
+{
+    display: flex;
+    justify-content: flex-start;
+    
+    padding : 0px 220px;
+}
+
+#practiceConatiner{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    width : 100%;
+ 
+}
+
+
+#charts{
+    padding : 50px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+
+}
+
+#dnd{
+    padding : 50px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    
+}
+
+#practiceLineChart{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    background-color : rgb(40,40,40);
+    margin-top : 10px;
+    padding-left: 30px;
+    border-radius: 5px;
+}
+
+.practiceCard{
+    height : 220px;
+    width : 245px;
+    background-color: rgb(40,40,40);
+    margin: 0px 20px;
+    padding : 20px;
+    border-radius: 5px;
+}
+
+.practiceCardHeading{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.dsa{
+    font-family: 'Ubuntu', sans-serif;
+    color : black;
+}
+
+.practiceCardProblems{
+    margin-top: 40px;
+    font-family: 'Ubuntu', sans-serif;
+    
+    color : rgb(254, 254, 254);
+
+    font-weight: 900;
+    font-size: 29px;
+    
+}
+
+.htmlText{
+    font-size: 20px;
+    color : rgb(212,139,12);
+    font-weight: 500;
+}
+
+.cssText{
+    font-size: 20px;
+    color : rgb(35,95,238);
+    font-weight: 500;
+}
+
+.jsText{
+    font-size: 20px;
+    color : rgb(229,162,33);
+    font-weight: 500;
+}
+
+.dsaText{
+    font-size: 20px;
+    color : rgb(101,155,211);
+    font-weight: 500;
+}

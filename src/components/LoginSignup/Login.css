@@ -1,0 +1,161 @@
+.LoginWrapper{
+    display: flex;
+    
+  }
+  
+  #pageWrapper{
+    background-image: linear-gradient(-45deg, rgb(0, 51, 76) 50%, rgb(0, 85, 127));
+  }
+  
+  .LoginLeftContainer{
+    height : 90vh;
+    width : 50%;
+    background-color: transparent;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .LoginRightContainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height : 90vh;
+    width : 50%;
+    background-color: transparent;
+  }
+  
+  .LoginLeftInnerConatiner{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  #LoginCompanyLogoImg{
+    width : 70px;
+    height : 70px;
+  }
+  
+  #LoginHeading
+  {
+    padding-top: 30px;
+    font-family: 'Montserrat', sans-serif;
+  
+    text-align: center;
+    font-weight: 900;
+    font-size: 35px;
+  
+    color : white;
+  }
+  
+  #LoginEmailInput, #LoginPasswordInput
+  {
+    font-family: 'Montserrat', sans-serif;
+  
+    font-weight: 700;
+    font-size: 16px;
+  
+    color : #3a3d5c;
+    width : 400px;
+    height : 50px;
+  }
+  
+  /* #LoginEmailInput:focus, #LoginPasswordInput:focus
+  {
+    border : none;
+  } */
+  
+  .LoginForm{
+    padding-top: 30px;
+  }
+  .LoginButton{
+    font-family: 'Montserrat', sans-serif;
+  
+    font-weight: 700;
+    font-size: 19px;
+    width: 400px;
+    border-radius : 6px;
+    background-color: rgb(17,150,126);
+    color : white;
+    height : 50px;  
+  }
+  
+  .LoginButton:hover{
+    width: 400px;
+    border-radius : 6px;
+    background-color: white;
+    height : 50px; 
+    color : #3a3d5c;
+    font-size: 20px;
+  }
+  
+  #LoginButtonArrow{
+    width: 30px;
+    float: right;
+  }
+  
+  #LoginBottomText
+  {
+    font-family: 'Montserrat', sans-serif;
+    padding-top: 20px;
+    font-weight: 600;
+    font-size: 18px;
+  
+    color : white;
+  }
+  
+  #LoginBottomText1
+  {
+    font-family: 'Montserrat', sans-serif;
+    padding-top: 20px;
+    font-weight: 700;
+    font-size: 18px;
+  
+    color : white;
+  }
+  
+  .LoginLoginCard{
+    width : 500px;
+    height : 300px;
+    background-color: white;
+    box-shadow: rgba(149, 157, 165, 0.397) 0px 8px 24px;
+    border-radius: 4px;
+    padding : 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
+  }
+  
+  
+  .LoginLoginCard #companyNameImg{
+    width : 80px;
+  }
+  
+  .LoginLoginCard #companyprofile
+  {
+    
+    width : 60px;
+  }
+  
+  .LoginLoginCard #companyprofileText{
+    padding-left: 15px;
+    font-family: 'Montserrat', sans-serif;
+    padding-top: 20px;
+    font-weight: 500;
+    font-size: 18px;
+  
+    color : #3a3d5cb0;
+  
+  }
+  
+  
+  .LoginLoginCard #CompanyText{
+    font-family: 'Montserrat', sans-serif;
+    padding-top: 20px;
+    font-weight: 500;
+    font-size: 18px;
+  
+    color : #3a3d5cb0;
+  }

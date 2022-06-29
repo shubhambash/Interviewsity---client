@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="20px" height="20px" viewBox="0 0 20 20" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>icons/background</title>
+    <g id="02_Builder" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round">
+        <g id="02_Sign-Up" transform="translate(-1363.000000, -217.000000)" stroke="#FFFFFF">
+            <g id="right-icons" transform="translate(1345.000000, 199.000000)">
+                <g id="icons/background" transform="translate(19.000000, 19.000000)">
+                    <rect id="Rectangle" fill-opacity="0.2" fill="#FFFFFF" x="0" y="0" width="18" height="18" rx="2"></rect>
+                    <circle id="Oval" cx="5.5" cy="5.5" r="1.5"></circle>
+                    <polyline id="Path" points="18 12 13 7 2 18"></polyline>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

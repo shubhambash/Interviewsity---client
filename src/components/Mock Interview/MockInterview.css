@@ -1,0 +1,57 @@
+#mockWrapper{
+    background-image: linear-gradient(-45deg, rgb(0, 51, 76) 50%, rgb(0, 85, 127));
+    height : 100vh;
+
+}
+
+#mockDetails{
+    margin-top: 20px;
+}
+
+#mockDetailsText{
+    font-family: 'Ubuntu', sans-serif;
+    text-align: center;
+    font-size: 17px;
+    color : #d6d8dd;
+    font-weight: 400;
+}
+
+#mockContainer{
+
+    margin : 200px;
+ 
+
+    display: flex;
+    flex-direction: column;
+
+
+}
+
+
+#mockHeadingText{
+    font-family: 'Ubuntu', sans-serif;
+    text-align: center;
+    font-size: 47px;
+    color : #d6d8dd;
+    font-weight: 400;
+}
+
+
+#startMockBtn{
+    font-family: 'Montserrat', sans-serif;
+  
+    font-weight: 700;
+    font-size: 19px;
+    width: 400px;
+    border-radius : 6px;
+    background-color: rgb(17,150,126);
+    color : white;
+    height : 50px;  
+}
+
+#startMock{
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

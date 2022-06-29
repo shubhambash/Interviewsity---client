@@ -1,0 +1,102 @@
+#profileOuterWrapper
+{
+    display: flex;
+    justify-content: flex-start;
+    
+    padding : 0px 220px;
+}
+
+#profileOutermostWrapper{
+    background-color: rgb(26,26,26)
+}
+
+#sidebarWrapper{
+    height : 100vh;
+    width : 350px;
+    padding : 50px; 
+    background-color : rgb(40,40,40);
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    border-radius: 5px;
+   
+}
+
+
+
+.personalInfo{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    font-size: 15px;
+    color : rgba(255, 255, 255, 0.646);
+}
+
+#personalInfo{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin-bottom: 25px;
+}
+
+#avatar{
+    height : 80px;
+    border-radius: 7px;
+}
+
+.icon{
+   color: rgba(240, 248, 255, 0.765);
+   
+}
+
+
+#personalInfoLvl1{
+    margin-top: 25px;
+    
+}
+
+#personalInfoLvl2{
+    margin-top: 25px;
+}
+
+#profileBodyWrapper
+{
+    
+   
+    width : 100%;
+    padding : 0px 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+}
+
+#profilePieChart{
+  
+
+    
+    
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#profileLineChart{
+
+     display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    background-color : rgb(40,40,40);
+    margin-top : 10px;
+    padding-left: 30px;
+    border-radius: 5px;
+ 
+ 
+}
+
+/* 
+
+text-align: center;
+font-weight: 900;
+font-size: 35px; */
