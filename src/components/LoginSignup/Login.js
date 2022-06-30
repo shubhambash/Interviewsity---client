@@ -124,7 +124,7 @@ function Login() {
                     </div>
 
                     <div id="">
-                        <p id='LoginHeading'>Register Interviewsity </p>
+                        <p id='LoginHeading'>Login Interviewsity </p>
                     </div>
 
                     <div className='LoginForm'>

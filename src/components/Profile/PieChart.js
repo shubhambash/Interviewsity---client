@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useState } from "react";
 import ReactDOM from "react-dom";
 
 
@@ -15,16 +15,60 @@ export const options = {
     title: { display: false }, legend: { display: false }
 }
 
-export const data = {
 
-   
+export default function PieChart({profileData, type}) {
+
+
+
+
+  const [ labels, setLabels] = useState(["1", "2", "3", "4", "5"])
+  const [arr, setArr] = useState([5,9,3,7,1])
+
+  useEffect(() => {
+    const arr1 = []
+    const label = []
+    if(type == "profiles")
+    {
+      arr1.push(profileData?.gfg)
+      arr1.push(profileData?.leetcode)
+      arr1.push(profileData?.hackerrank)
+
+      label.push("gfg")
+      label.push("leet")
+      label.push("hackrank")
+      
+      
     
-  labels: [],
+    }
+    else
+    {
+      arr1.push(profileData?.html)
+      arr1.push(profileData?.css)
+      arr1.push(profileData?.js)
+      arr1.push(profileData?.problemSolving)
+
+      label.push("html")
+      label.push("css")
+      label.push("js")
+      label.push("dsa")
+      
+     
+    }
+
+    setArr(arr1)
+    setLabels(label)
+  }, [profileData])
+
+
+  
+const data = {
+
+  labels: labels,
   datasets: [
     {
-      
-  
-      data: [12, 19, 3, 5, 2, 3],
+        
+    
+      data: arr,
       backgroundColor: [
         'rgba(255, 99, 132, 0.2)',
         'rgba(54, 162, 235, 0.2)',
@@ -48,10 +92,10 @@ export const data = {
 
 
 
-export default function PieChart() {
 
 
-
+  
+   
 
 
   return (
@@ -64,7 +108,7 @@ export default function PieChart() {
         </div>
 
         <div className="pt-3">
-            <p id='chartLabel'>Problems Solved</p>
+            <p id='chartLabel'>{type}</p>
         </div>
     
 

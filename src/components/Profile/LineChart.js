@@ -42,9 +42,17 @@ ChartJS.register(
     },
   };
   
+
+  
+
+
+
+function LineChart(props) {
+
+
   const labels = ['contest1','contest1','contest1','contest1','contest1','contest1','contest1','contest1','contest1','contest1','contest1'];
   
-  export const data = {
+  const data = {
     labels,
     datasets: [
       {
@@ -56,11 +64,6 @@ ChartJS.register(
       
     ],
   };
-  
-
-
-
-function LineChart(props) {
   return (
     <>
 

@@ -2,7 +2,10 @@ import React from 'react'
 import './Profile.css'
 import PieChart from './PieChart'
 import LineChart from './LineChart'
-function ProfileBody() {
+function ProfileBody({profileData}) {
+  const profiles = "profiles";
+  const languages = "languages";
+
   return (
     <>
 
@@ -12,11 +15,12 @@ function ProfileBody() {
             <div id='profilePieChart'>
 
                 <div>
-                 <PieChart />
+                <PieChart profileData = {profileData} type = {languages}/>
+
                 </div>
 
                 <div>
-                 <PieChart />
+                 <PieChart profileData = {profileData} type = {profiles}/>
                 </div>
                 
 

@@ -18,6 +18,52 @@ function Practice() {
     const [dsa_, setDsa] = useState(false)
 
 
+    const [profileData, setProfileData] = useState(null);
+    const email = localStorage.getItem("email")
+    useEffect(() => {
+      getProfileData(email)
+    }, [])
+  
+  
+    const getProfileData = async (email) => {
+  
+     
+      if(!email)return;
+      try {
+  
+  
+        const res = await fetch(`http://localhost:5000/profiledata/${email}`, {
+          method:"GET",
+          credentials: 'include',
+          headers:{
+              
+              "Content-Type": "application/json",
+              "Accepts":"application/json"
+              
+          },
+         
+      })
+  
+  
+      if(res.status === 200)
+      {
+        const data = await res.json();
+  
+        setProfileData(data)
+        console.log(data)
+      }
+  
+  
+  
+        
+      } catch (error) {
+        console.log(error)
+      }
+  
+  
+    }
+
+
     useEffect(() => {
 
     }, [html_,css_,js_, dsa_])
@@ -278,7 +324,7 @@ function Practice() {
             <div id='charts'>
 
                 <div>
-                <PieChart />
+                <PieChart profileData={profileData}/>
                 </div>
                 
                 <div id='practiceLineChart'>

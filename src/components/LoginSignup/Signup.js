@@ -15,7 +15,9 @@ function Signup() {
         email:"",
         password:"",
         name : "",
-        phone : ""
+        phone : "",
+        location : "",
+        institution : "",
     })
     
     let tname, value;
@@ -32,7 +34,7 @@ function Signup() {
     const postData = async (e) => {
 
         e.preventDefault();
-        const {name, email, phone, password} = user
+        const {name, email, phone, password, location, institution} = user
 
        
 
@@ -47,7 +49,7 @@ function Signup() {
             // send string as server wont understand object
             body: JSON.stringify(
                 {
-                    name, email, phone, password
+                    name, email, phone, password, location, institution
                 }
             )
         })
@@ -96,7 +98,7 @@ function Signup() {
                         <form>
                             <div className="mb-3">
                                
-                                <input type="email" className="form-control shadow-none" id="SignupEmailInput" aria-describedby="emailHelp" placeholder='Your Email'
+                                <input type="email" className="form-control shadow-none" id="SignupEmailInput" aria-describedby="emailHelp" placeholder=' Email'
                                 name='email'
                                 value={user.email}
                                 onChange={handleInput}
@@ -105,7 +107,7 @@ function Signup() {
                             </div>
                             <div className="mb-3">
      
-                                <input type="password" className="form-control shadow-none"  id="SignupPasswordInput" placeholder='Your Password'
+                                <input type="password" className="form-control shadow-none"  id="SignupPasswordInput" placeholder=' Password'
                                 name='password'
                                 value={user.password}
                                 onChange={handleInput}
@@ -116,7 +118,7 @@ function Signup() {
 
                             <div className="mb-3">
      
-                                <input type="text" className="form-control shadow-none"  id="SignupPasswordInput" placeholder='Your Full Name'
+                                <input type="text" className="form-control shadow-none"  id="SignupPasswordInput" placeholder=' Full Name'
                                 name='name'
                                 value={user.name}
                                 onChange={handleInput}
@@ -127,11 +129,35 @@ function Signup() {
 
                             <div className="mb-3">
      
-                                <input type="number" className="form-control shadow-none"  id="SignupPasswordInput" placeholder='Your Contact Number'
+                                <input type="number" className="form-control shadow-none"  id="SignupPasswordInput" placeholder=' Contact Number'
                                 name='phone'
                                 value={user.phone}
                                 onChange={handleInput}
                                    
+                                />
+
+                            </div>
+
+                            <div className="mb-3">
+     
+                                <input type="text" className="form-control shadow-none"  id="SignupPasswordInput" placeholder=' Location'
+                                name='location'
+                                value={user.location}
+                                onChange={handleInput}
+                                    
+                                />
+
+                            </div>
+
+
+
+                            <div className="mb-3">
+     
+                                <input type="text" className="form-control shadow-none"  id="SignupPasswordInput" placeholder='College/ Institution'
+                                name='institution'
+                                value={user.institution}
+                                onChange={handleInput}
+                                    
                                 />
 
                             </div>
