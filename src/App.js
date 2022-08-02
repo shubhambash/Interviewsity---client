@@ -6,6 +6,7 @@ import Signup from './components/LoginSignup/Signup';
 import MockInterview from './components/Mock Interview/MockInterview';
 import Practice from './components/Practice/Practice';
 import Profile from './components/Profile/Profile';
+import SearchUser from './components/SearchUser/SearchUser';
 function App() {
   return (
    <>
@@ -23,7 +24,7 @@ function App() {
         <Route path='/logout' element={<Logout />} />
         <Route path='/profile' element={<Profile />} />
         <Route path='/practice' element={<Practice />} />
-
+        <Route path='/searchuser' element={<SearchUser />} />
       </Routes>
 
     </Router>

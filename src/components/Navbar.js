@@ -29,7 +29,7 @@ function Navbar() {
       <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
       <li className='px-5'><NavLink className="nav-link active mx-4 mt-2" style={{color : 'white'}} aria-current="page" to="/mock">Mock interview</NavLink></li>
       <li className='px-5'><NavLink className="nav-link active mx-4 mt-2" style={{color : 'white'}} aria-current="page" to="/practice">Practice</NavLink></li>
-        
+      <li className='px-5'><NavLink className="nav-link active mx-4 mt-2" style={{color : 'white'}} aria-current="page" to="/searchuser">Search User</NavLink></li>
         {localStorage.getItem("email") ? 
         
         (<>

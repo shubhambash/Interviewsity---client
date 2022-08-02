@@ -1,0 +1,41 @@
+#searchOutermostWrapper
+{
+    background-color: rgb(26,26,26);
+    font-family: 'Ubuntu', sans-serif;
+}
+
+#searchOuterWrapper
+{
+    display: flex;
+    justify-content: flex-start;
+    
+    padding : 0px 220px;
+}
+
+#searchConatiner{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin : 50px;
+    height : 80vh;
+    padding : 30px;
+    background-color : rgb(40,40,40);
+    width : 100%;
+ 
+}
+
+#searchBar{
+    width : 500px;
+    height : 40px;
+}
+
+#usersFoundWrapper
+{
+    margin : 15px 0px;
+}
+
+#foundUser
+{
+    color : white;
+
+}

@@ -6,8 +6,8 @@ function MockInterview() {
 
     const [email, setEmail] = useState({
         email:"",
-    
     })
+    const [isTrue, setIsTrue] = useState(true)
 
     useEffect(() => {
         const x = localStorage.getItem("email")
@@ -16,6 +16,18 @@ function MockInterview() {
         
 
     }, )
+
+    const callApi = () => {
+        if(isTrue)
+        {
+            requestMockInterview()
+            setIsTrue(false)
+
+            setTimeout(() => {
+                setIsTrue(true)
+            }, 1000)
+        }
+    }
     
 
 
@@ -25,9 +37,6 @@ function MockInterview() {
          
             console.log(email)
             try {
-
-             
-
             const res = await fetch("http://localhost:5000/mock", {
             method:"POST",
             credentials : "include",
@@ -41,12 +50,9 @@ function MockInterview() {
             {
                 email
             })
-           
         })
 
         // show errors on client side
-      
-
         const data = await res.json()
 
         if(!data)
@@ -54,32 +60,31 @@ function MockInterview() {
             window.alert("cannot queue for mock interview try later")
         }
 
-        console.log(data)
-        let roomId = data.roomId
-
-        // const res1 = await fetch(`http://localhost:5000/${roomId}`, {
-        //     method:"GET",
-        //     credentials : "include",
-        //     headers:{
-                
-        //         "Content-Type": "application/json",
-        //         "Accepts":"application/json"
-                
-        //     },
-           
-        // })      
-
-        if(res.status == 409)
+        if(res.status === 422)
         {
-            roomId = localStorage.getItem("roomId")
-            window.alert("already queued for interview")
+            window.alert("cannot queue for mock interview try later")
+        }
+        else
+        {
+            let roomId = data.roomId
+
+        
+
+            if(res.status == 409)
+            {
+                roomId = localStorage.getItem("roomId")
+                window.alert("already queued for interview")
+            }
+    
+            if(roomId !== undefined)
+            {
+                localStorage.setItem("roomId", roomId)
+                window.location.href = `http://localhost:5000/${roomId}`;
+            }
         }
 
-        if(roomId !== undefined)
-        {
-            localStorage.setItem("roomId", roomId)
-            window.location.href = `http://localhost:5000/${roomId}`;
-        }
+       
+    
         
             } catch (error) {
                 console.log(error)
@@ -109,7 +114,7 @@ function MockInterview() {
                 <div id='startMock'>
 
                     <div>
-                     <button className='btn' id="startMockBtn" onClick={requestMockInterview}>Start Interview</button>
+                     <button className='btn' id="startMockBtn" onClick={callApi}>Start Interview</button>
                     </div>
                     
 
